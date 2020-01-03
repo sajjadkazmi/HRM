@@ -1,0 +1,51 @@
+﻿@model IEnumerable<HRM.Models.HRM_DEF_SHIFT_HRS>
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 style="text-align:center;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">DEFINE Shift HOURS</h3>
+<div class="form-body">
+    <p>
+        <a href="@Url.Action("AddOrEdit","SHIFT_HRS")" class="btn btn-default"><i class="fa fa-plus"></i> Create New</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SHIFT_TYPE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DESC)
+            </th>
+           
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SHIFT_TYPE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CODE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DESC)
+            </td>
+           
+            <td>
+                <a href="@Url.Action("AddOrEdit","SHIFT_HRS", new {id = item.CODE})" class="btn btn-default"> <i class="fa fa-pencil"></i>  View</a>
+
+                <a href="@Url.Action("Delete","SHIFT_HRS", new {id = item.CODE})" class="btn btn-default"> <i class="fa fa-trash"></i> delete</a>
+            </td>
+        </tr>
+        }
+
+    </table>
+</div>

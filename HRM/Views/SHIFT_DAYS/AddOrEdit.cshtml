@@ -1,0 +1,55 @@
+﻿@model HRM.Models.HRM_DEF_SHIFT_DAYS
+@{
+    ViewBag.Title = "AddOrEdit";
+}
+
+<h3 style="text-align:center;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">DEFINE SHIFT DAYS DETAILS</h3>
+
+<div class="form-body">
+    @using (Html.BeginForm())
+    {
+        @*@Html.HiddenFor(model => model.PARTY_CODE)*@
+        <table>
+            <tbody>
+                <tr>
+
+                    <td>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.CODE)
+                            @Html.EditorFor(model => model.CODE)
+                            @Html.ValidationMessageFor(model => model.CODE)
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.DESC)
+                            @Html.EditorFor(model => model.DESC)
+                            @Html.ValidationMessageFor(model => model.DESC)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.SHIFT_TYPE)
+                            @Html.DropDownListFor(x => x.SHIFT_TYPE, ViewBag.ShiftTypeList as SelectList, "--select--", new { @class = "form-controling" })
+                            @Html.ValidationMessageFor(model => model.SHIFT_TYPE)
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.SHIFT_HR)
+                            @Html.DropDownListFor(x => x.SHIFT_HR, ViewBag.ShiftHrList as SelectList, "--select--", new { @class = "form-controling" })
+                            @Html.ValidationMessageFor(model => model.SHIFT_HR)
+                        </div>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn button" />
+            <input type="reset" value="Reset" class="btn button" />
+        </div>
+    }
+</div>

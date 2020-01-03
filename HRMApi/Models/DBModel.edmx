@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HRMModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="HRM_ATTEND">
+          <Key>
+            <PropertyRef Name="TRAN_CODE" />
+          </Key>
+          <Property Name="TRAN_CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="TRAN_DATE" Type="date" />
+          <Property Name="USER_CODE" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="MONTH" Type="varchar" MaxLength="2" />
+          <Property Name="YEAR" Type="numeric" Precision="5" Scale="0" />
+          <Property Name="SHIFT_TYPE" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="SHIFT_HRS" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="SHIFT_DAYS" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="DAY1" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY1_IN" Type="time" Precision="7" />
+          <Property Name="DAY1_OUT" Type="time" Precision="7" />
+          <Property Name="DAY2" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY2_IN" Type="time" Precision="7" />
+          <Property Name="DAY2_OUT" Type="time" Precision="7" />
+          <Property Name="DAY3" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY3_IN" Type="time" Precision="7" />
+          <Property Name="DAY3_OUT" Type="time" Precision="7" />
+          <Property Name="DAY4" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY4_IN" Type="time" Precision="7" />
+          <Property Name="DAY4_OUT" Type="time" Precision="7" />
+          <Property Name="DAY5" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY5_IN" Type="time" Precision="7" />
+          <Property Name="DAY5_OUT" Type="time" Precision="7" />
+          <Property Name="DAY6" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY6_IN" Type="time" Precision="7" />
+          <Property Name="DAY6_OUT" Type="time" Precision="7" />
+          <Property Name="DAY7" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY7_IN" Type="time" Precision="7" />
+          <Property Name="DAY7_OUT" Type="time" Precision="7" />
+          <Property Name="DAY8" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY8_IN" Type="time" Precision="7" />
+          <Property Name="DAY8_OUT" Type="time" Precision="7" />
+          <Property Name="DAY9" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY9_IN" Type="time" Precision="7" />
+          <Property Name="DAY9_OUT" Type="time" Precision="7" />
+          <Property Name="DAY10" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY10_IN" Type="time" Precision="7" />
+          <Property Name="DAY10_OUT" Type="time" Precision="7" />
+          <Property Name="DAY11" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY11_IN" Type="time" Precision="7" />
+          <Property Name="DAY11_OUT" Type="time" Precision="7" />
+          <Property Name="DAY12" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY12_IN" Type="time" Precision="7" />
+          <Property Name="DAY12_OUT" Type="time" Precision="7" />
+          <Property Name="DAY13" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY13_IN" Type="time" Precision="7" />
+          <Property Name="DAY13_OUT" Type="time" Precision="7" />
+          <Property Name="DAY14" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY14_IN" Type="time" Precision="7" />
+          <Property Name="DAY14_OUT" Type="time" Precision="7" />
+          <Property Name="DAY15" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY15_IN" Type="time" Precision="7" />
+          <Property Name="DAY15_OUT" Type="time" Precision="7" />
+          <Property Name="DAY16" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY16_IN" Type="time" Precision="7" />
+          <Property Name="DAY16_OUT" Type="time" Precision="7" />
+          <Property Name="DAY17" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY17_IN" Type="time" Precision="7" />
+          <Property Name="DAY17_OUT" Type="time" Precision="7" />
+          <Property Name="DAY18" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY18_IN" Type="time" Precision="7" />
+          <Property Name="DAY18_OUT" Type="time" Precision="7" />
+          <Property Name="DAY19" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY19_IN" Type="time" Precision="7" />
+          <Property Name="DAY19_OUT" Type="time" Precision="7" />
+          <Property Name="DAY20" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY20_IN" Type="time" Precision="7" />
+          <Property Name="DAY20_OUT" Type="time" Precision="7" />
+          <Property Name="DAY21" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY21_IN" Type="time" Precision="7" />
+          <Property Name="DAY21_OUT" Type="time" Precision="7" />
+          <Property Name="DAY22" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY22_IN" Type="time" Precision="7" />
+          <Property Name="DAY22_OUT" Type="time" Precision="7" />
+          <Property Name="DAY23" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY23_IN" Type="time" Precision="7" />
+          <Property Name="DAY23_OUT" Type="time" Precision="7" />
+          <Property Name="DAY24" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY24_IN" Type="time" Precision="7" />
+          <Property Name="DAY24_OUT" Type="time" Precision="7" />
+          <Property Name="DAY25" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY25_IN" Type="time" Precision="7" />
+          <Property Name="DAY25_OUT" Type="time" Precision="7" />
+          <Property Name="DAY26" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY26_IN" Type="time" Precision="7" />
+          <Property Name="DAY26_OUT" Type="time" Precision="7" />
+          <Property Name="DAY27" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY27_IN" Type="time" Precision="7" />
+          <Property Name="DAY27_OUT" Type="time" Precision="7" />
+          <Property Name="DAY28" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY28_IN" Type="time" Precision="7" />
+          <Property Name="DAY28_OUT" Type="time" Precision="7" />
+          <Property Name="DAY29" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY29_IN" Type="time" Precision="7" />
+          <Property Name="DAY29_OUT" Type="time" Precision="7" />
+          <Property Name="DAY30" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY30_IN" Type="time" Precision="7" />
+          <Property Name="DAY30_OUT" Type="time" Precision="7" />
+          <Property Name="DAY31" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DAY31_IN" Type="time" Precision="7" />
+          <Property Name="DAY31_OUT" Type="time" Precision="7" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_ATEND_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE_HRM" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_DESIG">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE_HRM" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_EMP_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE_HRM" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_SHIFT_DAYS">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="SHIFT_TYPE" Type="int" Nullable="false" />
+          <Property Name="SHIFT_HR" Type="int" Nullable="false" />
+          <Property Name="CODE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="DAY1_IN" Type="time" Precision="7" />
+          <Property Name="DAY1_OUT" Type="time" Precision="7" />
+          <Property Name="DAY2_IN" Type="time" Precision="7" />
+          <Property Name="DAY2_OUT" Type="time" Precision="7" />
+          <Property Name="DAY3_IN" Type="time" Precision="7" />
+          <Property Name="DAY3_OUT" Type="time" Precision="7" />
+          <Property Name="DAY4_IN" Type="time" Precision="7" />
+          <Property Name="DAY4_OUT" Type="time" Precision="7" />
+          <Property Name="DAY5_IN" Type="time" Precision="7" />
+          <Property Name="DAY5_OUT" Type="time" Precision="7" />
+          <Property Name="DAY6_IN" Type="time" Precision="7" />
+          <Property Name="DAY6_OUT" Type="time" Precision="7" />
+          <Property Name="DAY7_IN" Type="time" Precision="7" />
+          <Property Name="DAY7_OUT" Type="time" Precision="7" />
+          <Property Name="DAY8_IN" Type="time" Precision="7" />
+          <Property Name="DAY8_OUT" Type="time" Precision="7" />
+          <Property Name="DAY9_IN" Type="time" Precision="7" />
+          <Property Name="DAY9_OUT" Type="time" Precision="7" />
+          <Property Name="DAY10_IN" Type="time" Precision="7" />
+          <Property Name="DAY10_OUT" Type="time" Precision="7" />
+          <Property Name="DAY11_IN" Type="time" Precision="7" />
+          <Property Name="DAY11_OUT" Type="time" Precision="7" />
+          <Property Name="DAY12_IN" Type="time" Precision="7" />
+          <Property Name="DAY12_OUT" Type="time" Precision="7" />
+          <Property Name="DAY13_IN" Type="time" Precision="7" />
+          <Property Name="DAY13_OUT" Type="time" Precision="7" />
+          <Property Name="DAY14_IN" Type="time" Precision="7" />
+          <Property Name="DAY14_OUT" Type="time" Precision="7" />
+          <Property Name="DAY15_IN" Type="time" Precision="7" />
+          <Property Name="DAY15_OUT" Type="time" Precision="7" />
+          <Property Name="DAY16_IN" Type="time" Precision="7" />
+          <Property Name="DAY16_OUT" Type="time" Precision="7" />
+          <Property Name="DAY17_IN" Type="time" Precision="7" />
+          <Property Name="DAY17_OUT" Type="time" Precision="7" />
+          <Property Name="DAY18_IN" Type="time" Precision="7" />
+          <Property Name="DAY18_OUT" Type="time" Precision="7" />
+          <Property Name="DAY19_IN" Type="time" Precision="7" />
+          <Property Name="DAY19_OUT" Type="time" Precision="7" />
+          <Property Name="DAY20_IN" Type="time" Precision="7" />
+          <Property Name="DAY20_OUT" Type="time" Precision="7" />
+          <Property Name="DAY21_IN" Type="time" Precision="7" />
+          <Property Name="DAY21_OUT" Type="time" Precision="7" />
+          <Property Name="DAY22_IN" Type="time" Precision="7" />
+          <Property Name="DAY22_OUT" Type="time" Precision="7" />
+          <Property Name="DAY23_IN" Type="time" Precision="7" />
+          <Property Name="DAY23_OUT" Type="time" Precision="7" />
+          <Property Name="DAY24_IN" Type="time" Precision="7" />
+          <Property Name="DAY24_OUT" Type="time" Precision="7" />
+          <Property Name="DAY25_IN" Type="time" Precision="7" />
+          <Property Name="DAY25_OUT" Type="time" Precision="7" />
+          <Property Name="DAY26_IN" Type="time" Precision="7" />
+          <Property Name="DAY26_OUT" Type="time" Precision="7" />
+          <Property Name="DAY27_IN" Type="time" Precision="7" />
+          <Property Name="DAY27_OUT" Type="time" Precision="7" />
+          <Property Name="DAY28_IN" Type="time" Precision="7" />
+          <Property Name="DAY28_OUT" Type="time" Precision="7" />
+          <Property Name="DAY29_IN" Type="time" Precision="7" />
+          <Property Name="DAY29_OUT" Type="time" Precision="7" />
+          <Property Name="DAY30_IN" Type="time" Precision="7" />
+          <Property Name="DAY30_OUT" Type="time" Precision="7" />
+          <Property Name="DAY31_IN" Type="time" Precision="7" />
+          <Property Name="DAY31_OUT" Type="time" Precision="7" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE_HRM" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_SHIFT_HRS">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="SHIFT_TYPE" Type="int" Nullable="false" />
+          <Property Name="CODE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_SHIFT_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DESC" Type="varchar(max)" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+          </Key>
+          <Property Name="CREATION" Type="date" />
+          <Property Name="USER_CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NAME" Type="varchar(max)" />
+          <Property Name="ADDRESS" Type="varchar(max)" />
+          <Property Name="DOB" Type="date" />
+          <Property Name="CNIC" Type="numeric" Precision="16" Scale="0" />
+          <Property Name="FATHER" Type="varchar(max)" />
+          <Property Name="MOTHER" Type="varchar(max)" />
+          <Property Name="SPOUSE" Type="varchar(max)" />
+          <Property Name="PHONE" Type="varchar" MaxLength="80" />
+          <Property Name="CELL" Type="varchar" MaxLength="60" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="60" />
+          <Property Name="GENDER" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="MARITAL" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="KIDS" Type="numeric" Precision="5" Scale="0" />
+          <Property Name="PHOTO" Type="image" />
+          <Property Name="EMP_CODE" Type="varchar" MaxLength="10" />
+          <Property Name="EMP_STATUS" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="LM_EMP_CODE" Type="varchar" MaxLength="10" />
+          <Property Name="BRANCH_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DEPT_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="TITLE_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="SHIFT_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="DOJ" Type="date" />
+          <Property Name="DOC" Type="date" />
+          <Property Name="RESIGN" Type="numeric" Precision="1" Scale="0" />
+          <Property Name="RESIGN_DATE" Type="date" />
+          <Property Name="BANK_AC_NO" Type="varchar" MaxLength="20" />
+          <Property Name="AUTH_STATUS" Type="varchar" MaxLength="1" />
+          <Property Name="AUTH_DATE" Type="datetime" />
+          <Property Name="AUTH_BY" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="varchar(max)" />
+          <Property Name="INACTIVE" Type="numeric" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_EDU">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="EDU_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="UNI_CODE" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="GRADE" Type="varchar" MaxLength="20" />
+          <Property Name="PASS_YEAR" Type="varchar" MaxLength="4" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_EXP">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="COMPANY" Type="varchar(max)" />
+          <Property Name="TITLE" Type="varchar(max)" />
+          <Property Name="PHONE" Type="varchar(max)" />
+          <Property Name="EMAIL" Type="varchar(max)" />
+          <Property Name="FROM" Type="date" />
+          <Property Name="TO" Type="date" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_REF">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="NAME" Type="varchar(max)" />
+          <Property Name="PROF" Type="varchar(max)" />
+          <Property Name="COMPANY" Type="varchar(max)" />
+          <Property Name="REL" Type="numeric" Precision="10" Scale="0" />
+          <Property Name="REL_NOY" Type="numeric" Precision="3" Scale="0" />
+          <Property Name="PHONE" Type="varchar" MaxLength="80" />
+          <Property Name="CELL" Type="varchar" MaxLength="80" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="80" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityContainer Name="HRMModelStoreContainer">
+          <EntitySet Name="HRM_ATTEND" EntityType="Self.HRM_ATTEND" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_ATEND_TYPE" EntityType="Self.HRM_DEF_ATEND_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_DESIG" EntityType="Self.HRM_DEF_DESIG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_EMP_TYPE" EntityType="Self.HRM_DEF_EMP_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_SHIFT_DAYS" EntityType="Self.HRM_DEF_SHIFT_DAYS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_SHIFT_HRS" EntityType="Self.HRM_DEF_SHIFT_HRS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_DEF_SHIFT_TYPE" EntityType="Self.HRM_DEF_SHIFT_TYPE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_MASTER" EntityType="Self.HRM_MASTER" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_MASTER_EDU" EntityType="Self.HRM_MASTER_EDU" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_MASTER_EXP" EntityType="Self.HRM_MASTER_EXP" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRM_MASTER_REF" EntityType="Self.HRM_MASTER_REF" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HRMModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="HRM_ATTEND">
+          <Key>
+            <PropertyRef Name="TRAN_CODE" />
+          </Key>
+          <Property Name="TRAN_CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="TRAN_DATE" Type="DateTime" Precision="0" />
+          <Property Name="USER_CODE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MONTH" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="YEAR" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="SHIFT_TYPE" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SHIFT_HRS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SHIFT_DAYS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DAY1" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY1_IN" Type="Time" Precision="7" />
+          <Property Name="DAY1_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY2" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY2_IN" Type="Time" Precision="7" />
+          <Property Name="DAY2_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY3" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY3_IN" Type="Time" Precision="7" />
+          <Property Name="DAY3_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY4" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY4_IN" Type="Time" Precision="7" />
+          <Property Name="DAY4_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY5" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY5_IN" Type="Time" Precision="7" />
+          <Property Name="DAY5_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY6" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY6_IN" Type="Time" Precision="7" />
+          <Property Name="DAY6_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY7" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY7_IN" Type="Time" Precision="7" />
+          <Property Name="DAY7_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY8" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY8_IN" Type="Time" Precision="7" />
+          <Property Name="DAY8_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY9" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY9_IN" Type="Time" Precision="7" />
+          <Property Name="DAY9_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY10" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY10_IN" Type="Time" Precision="7" />
+          <Property Name="DAY10_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY11" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY11_IN" Type="Time" Precision="7" />
+          <Property Name="DAY11_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY12" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY12_IN" Type="Time" Precision="7" />
+          <Property Name="DAY12_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY13" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY13_IN" Type="Time" Precision="7" />
+          <Property Name="DAY13_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY14" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY14_IN" Type="Time" Precision="7" />
+          <Property Name="DAY14_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY15" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY15_IN" Type="Time" Precision="7" />
+          <Property Name="DAY15_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY16" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY16_IN" Type="Time" Precision="7" />
+          <Property Name="DAY16_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY17" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY17_IN" Type="Time" Precision="7" />
+          <Property Name="DAY17_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY18" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY18_IN" Type="Time" Precision="7" />
+          <Property Name="DAY18_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY19" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY19_IN" Type="Time" Precision="7" />
+          <Property Name="DAY19_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY20" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY20_IN" Type="Time" Precision="7" />
+          <Property Name="DAY20_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY21" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY21_IN" Type="Time" Precision="7" />
+          <Property Name="DAY21_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY22" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY22_IN" Type="Time" Precision="7" />
+          <Property Name="DAY22_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY23" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY23_IN" Type="Time" Precision="7" />
+          <Property Name="DAY23_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY24" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY24_IN" Type="Time" Precision="7" />
+          <Property Name="DAY24_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY25" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY25_IN" Type="Time" Precision="7" />
+          <Property Name="DAY25_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY26" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY26_IN" Type="Time" Precision="7" />
+          <Property Name="DAY26_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY27" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY27_IN" Type="Time" Precision="7" />
+          <Property Name="DAY27_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY28" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY28_IN" Type="Time" Precision="7" />
+          <Property Name="DAY28_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY29" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY29_IN" Type="Time" Precision="7" />
+          <Property Name="DAY29_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY30" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY30_IN" Type="Time" Precision="7" />
+          <Property Name="DAY30_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY31" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DAY31_IN" Type="Time" Precision="7" />
+          <Property Name="DAY31_OUT" Type="Time" Precision="7" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_ATEND_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE_HRM" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_DESIG">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE_HRM" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_EMP_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE_HRM" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_SHIFT_HRS">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="SHIFT_TYPE" Type="Int32" Nullable="false" />
+          <Property Name="CODE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_DEF_SHIFT_TYPE">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="CODE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+          </Key>
+          <Property Name="CREATION" Type="DateTime" Precision="0" />
+          <Property Name="USER_CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ADDRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DOB" Type="DateTime" Precision="0" />
+          <Property Name="CNIC" Type="Decimal" Precision="16" Scale="0" />
+          <Property Name="FATHER" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="MOTHER" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="SPOUSE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="CELL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="GENDER" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="MARITAL" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="KIDS" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="PHOTO" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="EMP_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EMP_STATUS" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="LM_EMP_CODE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="BRANCH_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DEPT_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="TITLE_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="SHIFT_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="DOJ" Type="DateTime" Precision="0" />
+          <Property Name="DOC" Type="DateTime" Precision="0" />
+          <Property Name="RESIGN" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="RESIGN_DATE" Type="DateTime" Precision="0" />
+          <Property Name="BANK_AC_NO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_EDU">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="EDU_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="UNI_CODE" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="GRADE" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PASS_YEAR" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_EXP">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="Decimal" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="COMPANY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="TITLE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PHONE" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FROM" Type="DateTime" Precision="0" />
+          <Property Name="TO" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="HRM_MASTER_REF">
+          <Key>
+            <PropertyRef Name="USER_CODE" />
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="USER_CODE" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="CODE" Type="Decimal" Precision="5" Scale="0" Nullable="false" />
+          <Property Name="NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PROF" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="COMPANY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="REL" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="REL_NOY" Type="Decimal" Precision="3" Scale="0" />
+          <Property Name="PHONE" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="CELL" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityContainer Name="HRMEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="HRM_ATTEND" EntityType="Self.HRM_ATTEND" />
+          <EntitySet Name="HRM_DEF_ATEND_TYPE" EntityType="Self.HRM_DEF_ATEND_TYPE" />
+          <EntitySet Name="HRM_DEF_DESIG" EntityType="Self.HRM_DEF_DESIG" />
+          <EntitySet Name="HRM_DEF_EMP_TYPE" EntityType="Self.HRM_DEF_EMP_TYPE" />
+          <EntitySet Name="HRM_DEF_SHIFT_HRS" EntityType="Self.HRM_DEF_SHIFT_HRS" />
+          <EntitySet Name="HRM_DEF_SHIFT_TYPE" EntityType="Self.HRM_DEF_SHIFT_TYPE" />
+          <EntitySet Name="HRM_MASTER" EntityType="Self.HRM_MASTER" />
+          <EntitySet Name="HRM_MASTER_EDU" EntityType="Self.HRM_MASTER_EDU" />
+          <EntitySet Name="HRM_MASTER_EXP" EntityType="Self.HRM_MASTER_EXP" />
+          <EntitySet Name="HRM_MASTER_REF" EntityType="Self.HRM_MASTER_REF" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="HRM_DEF_SHIFT_DAYS" EntityType="HRMModel.HRM_DEF_SHIFT_DAYS" />
+        </EntityContainer>
+        <EntityType Name="HRM_DEF_SHIFT_DAYS">
+          <Key>
+            <PropertyRef Name="CODE" />
+          </Key>
+          <Property Name="SHIFT_TYPE" Type="Int32" Nullable="false" />
+          <Property Name="SHIFT_HR" Type="Int32" Nullable="false" />
+          <Property Name="CODE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DESC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DAY1_IN" Type="Time" Precision="7" />
+          <Property Name="DAY1_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY2_IN" Type="Time" Precision="7" />
+          <Property Name="DAY2_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY3_IN" Type="Time" Precision="7" />
+          <Property Name="DAY3_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY4_IN" Type="Time" Precision="7" />
+          <Property Name="DAY4_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY5_IN" Type="Time" Precision="7" />
+          <Property Name="DAY5_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY6_IN" Type="Time" Precision="7" />
+          <Property Name="DAY6_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY7_IN" Type="Time" Precision="7" />
+          <Property Name="DAY7_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY8_IN" Type="Time" Precision="7" />
+          <Property Name="DAY8_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY9_IN" Type="Time" Precision="7" />
+          <Property Name="DAY9_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY10_IN" Type="Time" Precision="7" />
+          <Property Name="DAY10_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY11_IN" Type="Time" Precision="7" />
+          <Property Name="DAY11_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY12_IN" Type="Time" Precision="7" />
+          <Property Name="DAY12_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY13_IN" Type="Time" Precision="7" />
+          <Property Name="DAY13_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY14_IN" Type="Time" Precision="7" />
+          <Property Name="DAY14_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY15_IN" Type="Time" Precision="7" />
+          <Property Name="DAY15_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY16_IN" Type="Time" Precision="7" />
+          <Property Name="DAY16_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY17_IN" Type="Time" Precision="7" />
+          <Property Name="DAY17_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY18_IN" Type="Time" Precision="7" />
+          <Property Name="DAY18_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY19_IN" Type="Time" Precision="7" />
+          <Property Name="DAY19_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY20_IN" Type="Time" Precision="7" />
+          <Property Name="DAY20_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY21_IN" Type="Time" Precision="7" />
+          <Property Name="DAY21_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY22_IN" Type="Time" Precision="7" />
+          <Property Name="DAY22_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY23_IN" Type="Time" Precision="7" />
+          <Property Name="DAY23_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY24_IN" Type="Time" Precision="7" />
+          <Property Name="DAY24_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY25_IN" Type="Time" Precision="7" />
+          <Property Name="DAY25_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY26_IN" Type="Time" Precision="7" />
+          <Property Name="DAY26_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY27_IN" Type="Time" Precision="7" />
+          <Property Name="DAY27_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY28_IN" Type="Time" Precision="7" />
+          <Property Name="DAY28_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY29_IN" Type="Time" Precision="7" />
+          <Property Name="DAY29_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY30_IN" Type="Time" Precision="7" />
+          <Property Name="DAY30_OUT" Type="Time" Precision="7" />
+          <Property Name="DAY31_IN" Type="Time" Precision="7" />
+          <Property Name="DAY31_OUT" Type="Time" Precision="7" />
+          <Property Name="AUTH_STATUS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="AUTH_DATE" Type="DateTime" Precision="3" />
+          <Property Name="AUTH_BY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AUTH_REMARKS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="INACTIVE_HRM" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HRMModelStoreContainer" CdmEntityContainer="HRMEntities">
+          <EntitySetMapping Name="HRM_ATTEND">
+            <EntityTypeMapping TypeName="HRMModel.HRM_ATTEND">
+              <MappingFragment StoreEntitySet="HRM_ATTEND">
+                <ScalarProperty Name="TRAN_CODE" ColumnName="TRAN_CODE" />
+                <ScalarProperty Name="TRAN_DATE" ColumnName="TRAN_DATE" />
+                <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+                <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+                <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+                <ScalarProperty Name="SHIFT_TYPE" ColumnName="SHIFT_TYPE" />
+                <ScalarProperty Name="SHIFT_HRS" ColumnName="SHIFT_HRS" />
+                <ScalarProperty Name="SHIFT_DAYS" ColumnName="SHIFT_DAYS" />
+                <ScalarProperty Name="DAY1" ColumnName="DAY1" />
+                <ScalarProperty Name="DAY1_IN" ColumnName="DAY1_IN" />
+                <ScalarProperty Name="DAY1_OUT" ColumnName="DAY1_OUT" />
+                <ScalarProperty Name="DAY2" ColumnName="DAY2" />
+                <ScalarProperty Name="DAY2_IN" ColumnName="DAY2_IN" />
+                <ScalarProperty Name="DAY2_OUT" ColumnName="DAY2_OUT" />
+                <ScalarProperty Name="DAY3" ColumnName="DAY3" />
+                <ScalarProperty Name="DAY3_IN" ColumnName="DAY3_IN" />
+                <ScalarProperty Name="DAY3_OUT" ColumnName="DAY3_OUT" />
+                <ScalarProperty Name="DAY4" ColumnName="DAY4" />
+                <ScalarProperty Name="DAY4_IN" ColumnName="DAY4_IN" />
+                <ScalarProperty Name="DAY4_OUT" ColumnName="DAY4_OUT" />
+                <ScalarProperty Name="DAY5" ColumnName="DAY5" />
+                <ScalarProperty Name="DAY5_IN" ColumnName="DAY5_IN" />
+                <ScalarProperty Name="DAY5_OUT" ColumnName="DAY5_OUT" />
+                <ScalarProperty Name="DAY6" ColumnName="DAY6" />
+                <ScalarProperty Name="DAY6_IN" ColumnName="DAY6_IN" />
+                <ScalarProperty Name="DAY6_OUT" ColumnName="DAY6_OUT" />
+                <ScalarProperty Name="DAY7" ColumnName="DAY7" />
+                <ScalarProperty Name="DAY7_IN" ColumnName="DAY7_IN" />
+                <ScalarProperty Name="DAY7_OUT" ColumnName="DAY7_OUT" />
+                <ScalarProperty Name="DAY8" ColumnName="DAY8" />
+                <ScalarProperty Name="DAY8_IN" ColumnName="DAY8_IN" />
+                <ScalarProperty Name="DAY8_OUT" ColumnName="DAY8_OUT" />
+                <ScalarProperty Name="DAY9" ColumnName="DAY9" />
+                <ScalarProperty Name="DAY9_IN" ColumnName="DAY9_IN" />
+                <ScalarProperty Name="DAY9_OUT" ColumnName="DAY9_OUT" />
+                <ScalarProperty Name="DAY10" ColumnName="DAY10" />
+                <ScalarProperty Name="DAY10_IN" ColumnName="DAY10_IN" />
+                <ScalarProperty Name="DAY10_OUT" ColumnName="DAY10_OUT" />
+                <ScalarProperty Name="DAY11" ColumnName="DAY11" />
+                <ScalarProperty Name="DAY11_IN" ColumnName="DAY11_IN" />
+                <ScalarProperty Name="DAY11_OUT" ColumnName="DAY11_OUT" />
+                <ScalarProperty Name="DAY12" ColumnName="DAY12" />
+                <ScalarProperty Name="DAY12_IN" ColumnName="DAY12_IN" />
+                <ScalarProperty Name="DAY12_OUT" ColumnName="DAY12_OUT" />
+                <ScalarProperty Name="DAY13" ColumnName="DAY13" />
+                <ScalarProperty Name="DAY13_IN" ColumnName="DAY13_IN" />
+                <ScalarProperty Name="DAY13_OUT" ColumnName="DAY13_OUT" />
+                <ScalarProperty Name="DAY14" ColumnName="DAY14" />
+                <ScalarProperty Name="DAY14_IN" ColumnName="DAY14_IN" />
+                <ScalarProperty Name="DAY14_OUT" ColumnName="DAY14_OUT" />
+                <ScalarProperty Name="DAY15" ColumnName="DAY15" />
+                <ScalarProperty Name="DAY15_IN" ColumnName="DAY15_IN" />
+                <ScalarProperty Name="DAY15_OUT" ColumnName="DAY15_OUT" />
+                <ScalarProperty Name="DAY16" ColumnName="DAY16" />
+                <ScalarProperty Name="DAY16_IN" ColumnName="DAY16_IN" />
+                <ScalarProperty Name="DAY16_OUT" ColumnName="DAY16_OUT" />
+                <ScalarProperty Name="DAY17" ColumnName="DAY17" />
+                <ScalarProperty Name="DAY17_IN" ColumnName="DAY17_IN" />
+                <ScalarProperty Name="DAY17_OUT" ColumnName="DAY17_OUT" />
+                <ScalarProperty Name="DAY18" ColumnName="DAY18" />
+                <ScalarProperty Name="DAY18_IN" ColumnName="DAY18_IN" />
+                <ScalarProperty Name="DAY18_OUT" ColumnName="DAY18_OUT" />
+                <ScalarProperty Name="DAY19" ColumnName="DAY19" />
+                <ScalarProperty Name="DAY19_IN" ColumnName="DAY19_IN" />
+                <ScalarProperty Name="DAY19_OUT" ColumnName="DAY19_OUT" />
+                <ScalarProperty Name="DAY20" ColumnName="DAY20" />
+                <ScalarProperty Name="DAY20_IN" ColumnName="DAY20_IN" />
+                <ScalarProperty Name="DAY20_OUT" ColumnName="DAY20_OUT" />
+                <ScalarProperty Name="DAY21" ColumnName="DAY21" />
+                <ScalarProperty Name="DAY21_IN" ColumnName="DAY21_IN" />
+                <ScalarProperty Name="DAY21_OUT" ColumnName="DAY21_OUT" />
+                <ScalarProperty Name="DAY22" ColumnName="DAY22" />
+                <ScalarProperty Name="DAY22_IN" ColumnName="DAY22_IN" />
+                <ScalarProperty Name="DAY22_OUT" ColumnName="DAY22_OUT" />
+                <ScalarProperty Name="DAY23" ColumnName="DAY23" />
+                <ScalarProperty Name="DAY23_IN" ColumnName="DAY23_IN" />
+                <ScalarProperty Name="DAY23_OUT" ColumnName="DAY23_OUT" />
+                <ScalarProperty Name="DAY24" ColumnName="DAY24" />
+                <ScalarProperty Name="DAY24_IN" ColumnName="DAY24_IN" />
+                <ScalarProperty Name="DAY24_OUT" ColumnName="DAY24_OUT" />
+                <ScalarProperty Name="DAY25" ColumnName="DAY25" />
+                <ScalarProperty Name="DAY25_IN" ColumnName="DAY25_IN" />
+                <ScalarProperty Name="DAY25_OUT" ColumnName="DAY25_OUT" />
+                <ScalarProperty Name="DAY26" ColumnName="DAY26" />
+                <ScalarProperty Name="DAY26_IN" ColumnName="DAY26_IN" />
+                <ScalarProperty Name="DAY26_OUT" ColumnName="DAY26_OUT" />
+                <ScalarProperty Name="DAY27" ColumnName="DAY27" />
+                <ScalarProperty Name="DAY27_IN" ColumnName="DAY27_IN" />
+                <ScalarProperty Name="DAY27_OUT" ColumnName="DAY27_OUT" />
+                <ScalarProperty Name="DAY28" ColumnName="DAY28" />
+                <ScalarProperty Name="DAY28_IN" ColumnName="DAY28_IN" />
+                <ScalarProperty Name="DAY28_OUT" ColumnName="DAY28_OUT" />
+                <ScalarProperty Name="DAY29" ColumnName="DAY29" />
+                <ScalarProperty Name="DAY29_IN" ColumnName="DAY29_IN" />
+                <ScalarProperty Name="DAY29_OUT" ColumnName="DAY29_OUT" />
+                <ScalarProperty Name="DAY30" ColumnName="DAY30" />
+                <ScalarProperty Name="DAY30_IN" ColumnName="DAY30_IN" />
+                <ScalarProperty Name="DAY30_OUT" ColumnName="DAY30_OUT" />
+                <ScalarProperty Name="DAY31" ColumnName="DAY31" />
+                <ScalarProperty Name="DAY31_IN" ColumnName="DAY31_IN" />
+                <ScalarProperty Name="DAY31_OUT" ColumnName="DAY31_OUT" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_ATEND_TYPE">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_ATEND_TYPE">
+              <MappingFragment StoreEntitySet="HRM_DEF_ATEND_TYPE">
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE_HRM" ColumnName="INACTIVE_HRM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_DESIG">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_DESIG">
+              <MappingFragment StoreEntitySet="HRM_DEF_DESIG">
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE_HRM" ColumnName="INACTIVE_HRM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_EMP_TYPE">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_EMP_TYPE">
+              <MappingFragment StoreEntitySet="HRM_DEF_EMP_TYPE">
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE_HRM" ColumnName="INACTIVE_HRM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_SHIFT_HRS">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_SHIFT_HRS">
+              <MappingFragment StoreEntitySet="HRM_DEF_SHIFT_HRS">
+                <ScalarProperty Name="SHIFT_TYPE" ColumnName="SHIFT_TYPE" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_SHIFT_TYPE">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_SHIFT_TYPE">
+              <MappingFragment StoreEntitySet="HRM_DEF_SHIFT_TYPE">
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_MASTER">
+            <EntityTypeMapping TypeName="HRMModel.HRM_MASTER">
+              <MappingFragment StoreEntitySet="HRM_MASTER">
+                <ScalarProperty Name="CREATION" ColumnName="CREATION" />
+                <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="CNIC" ColumnName="CNIC" />
+                <ScalarProperty Name="FATHER" ColumnName="FATHER" />
+                <ScalarProperty Name="MOTHER" ColumnName="MOTHER" />
+                <ScalarProperty Name="SPOUSE" ColumnName="SPOUSE" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="CELL" ColumnName="CELL" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="GENDER" ColumnName="GENDER" />
+                <ScalarProperty Name="MARITAL" ColumnName="MARITAL" />
+                <ScalarProperty Name="KIDS" ColumnName="KIDS" />
+                <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+                <ScalarProperty Name="EMP_CODE" ColumnName="EMP_CODE" />
+                <ScalarProperty Name="EMP_STATUS" ColumnName="EMP_STATUS" />
+                <ScalarProperty Name="LM_EMP_CODE" ColumnName="LM_EMP_CODE" />
+                <ScalarProperty Name="BRANCH_CODE" ColumnName="BRANCH_CODE" />
+                <ScalarProperty Name="DEPT_CODE" ColumnName="DEPT_CODE" />
+                <ScalarProperty Name="TITLE_CODE" ColumnName="TITLE_CODE" />
+                <ScalarProperty Name="SHIFT_CODE" ColumnName="SHIFT_CODE" />
+                <ScalarProperty Name="DOJ" ColumnName="DOJ" />
+                <ScalarProperty Name="DOC" ColumnName="DOC" />
+                <ScalarProperty Name="RESIGN" ColumnName="RESIGN" />
+                <ScalarProperty Name="RESIGN_DATE" ColumnName="RESIGN_DATE" />
+                <ScalarProperty Name="BANK_AC_NO" ColumnName="BANK_AC_NO" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="INACTIVE" ColumnName="INACTIVE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_MASTER_EDU">
+            <EntityTypeMapping TypeName="HRMModel.HRM_MASTER_EDU">
+              <MappingFragment StoreEntitySet="HRM_MASTER_EDU">
+                <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="EDU_CODE" ColumnName="EDU_CODE" />
+                <ScalarProperty Name="UNI_CODE" ColumnName="UNI_CODE" />
+                <ScalarProperty Name="GRADE" ColumnName="GRADE" />
+                <ScalarProperty Name="PASS_YEAR" ColumnName="PASS_YEAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_MASTER_EXP">
+            <EntityTypeMapping TypeName="HRMModel.HRM_MASTER_EXP">
+              <MappingFragment StoreEntitySet="HRM_MASTER_EXP">
+                <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="FROM" ColumnName="FROM" />
+                <ScalarProperty Name="TO" ColumnName="TO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_MASTER_REF">
+            <EntityTypeMapping TypeName="HRMModel.HRM_MASTER_REF">
+              <MappingFragment StoreEntitySet="HRM_MASTER_REF">
+                <ScalarProperty Name="USER_CODE" ColumnName="USER_CODE" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="PROF" ColumnName="PROF" />
+                <ScalarProperty Name="COMPANY" ColumnName="COMPANY" />
+                <ScalarProperty Name="REL" ColumnName="REL" />
+                <ScalarProperty Name="REL_NOY" ColumnName="REL_NOY" />
+                <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+                <ScalarProperty Name="CELL" ColumnName="CELL" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="HRMModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRM_DEF_SHIFT_DAYS">
+            <EntityTypeMapping TypeName="HRMModel.HRM_DEF_SHIFT_DAYS">
+              <MappingFragment StoreEntitySet="HRM_DEF_SHIFT_DAYS">
+                <ScalarProperty Name="INACTIVE_HRM" ColumnName="INACTIVE_HRM" />
+                <ScalarProperty Name="AUTH_REMARKS" ColumnName="AUTH_REMARKS" />
+                <ScalarProperty Name="AUTH_BY" ColumnName="AUTH_BY" />
+                <ScalarProperty Name="AUTH_DATE" ColumnName="AUTH_DATE" />
+                <ScalarProperty Name="AUTH_STATUS" ColumnName="AUTH_STATUS" />
+                <ScalarProperty Name="DAY31_OUT" ColumnName="DAY31_OUT" />
+                <ScalarProperty Name="DAY31_IN" ColumnName="DAY31_IN" />
+                <ScalarProperty Name="DAY30_OUT" ColumnName="DAY30_OUT" />
+                <ScalarProperty Name="DAY30_IN" ColumnName="DAY30_IN" />
+                <ScalarProperty Name="DAY29_OUT" ColumnName="DAY29_OUT" />
+                <ScalarProperty Name="DAY29_IN" ColumnName="DAY29_IN" />
+                <ScalarProperty Name="DAY28_OUT" ColumnName="DAY28_OUT" />
+                <ScalarProperty Name="DAY28_IN" ColumnName="DAY28_IN" />
+                <ScalarProperty Name="DAY27_OUT" ColumnName="DAY27_OUT" />
+                <ScalarProperty Name="DAY27_IN" ColumnName="DAY27_IN" />
+                <ScalarProperty Name="DAY26_OUT" ColumnName="DAY26_OUT" />
+                <ScalarProperty Name="DAY26_IN" ColumnName="DAY26_IN" />
+                <ScalarProperty Name="DAY25_OUT" ColumnName="DAY25_OUT" />
+                <ScalarProperty Name="DAY25_IN" ColumnName="DAY25_IN" />
+                <ScalarProperty Name="DAY24_OUT" ColumnName="DAY24_OUT" />
+                <ScalarProperty Name="DAY24_IN" ColumnName="DAY24_IN" />
+                <ScalarProperty Name="DAY23_OUT" ColumnName="DAY23_OUT" />
+                <ScalarProperty Name="DAY23_IN" ColumnName="DAY23_IN" />
+                <ScalarProperty Name="DAY22_OUT" ColumnName="DAY22_OUT" />
+                <ScalarProperty Name="DAY22_IN" ColumnName="DAY22_IN" />
+                <ScalarProperty Name="DAY21_OUT" ColumnName="DAY21_OUT" />
+                <ScalarProperty Name="DAY21_IN" ColumnName="DAY21_IN" />
+                <ScalarProperty Name="DAY20_OUT" ColumnName="DAY20_OUT" />
+                <ScalarProperty Name="DAY20_IN" ColumnName="DAY20_IN" />
+                <ScalarProperty Name="DAY19_OUT" ColumnName="DAY19_OUT" />
+                <ScalarProperty Name="DAY19_IN" ColumnName="DAY19_IN" />
+                <ScalarProperty Name="DAY18_OUT" ColumnName="DAY18_OUT" />
+                <ScalarProperty Name="DAY18_IN" ColumnName="DAY18_IN" />
+                <ScalarProperty Name="DAY17_OUT" ColumnName="DAY17_OUT" />
+                <ScalarProperty Name="DAY17_IN" ColumnName="DAY17_IN" />
+                <ScalarProperty Name="DAY16_OUT" ColumnName="DAY16_OUT" />
+                <ScalarProperty Name="DAY16_IN" ColumnName="DAY16_IN" />
+                <ScalarProperty Name="DAY15_OUT" ColumnName="DAY15_OUT" />
+                <ScalarProperty Name="DAY15_IN" ColumnName="DAY15_IN" />
+                <ScalarProperty Name="DAY14_OUT" ColumnName="DAY14_OUT" />
+                <ScalarProperty Name="DAY14_IN" ColumnName="DAY14_IN" />
+                <ScalarProperty Name="DAY13_OUT" ColumnName="DAY13_OUT" />
+                <ScalarProperty Name="DAY13_IN" ColumnName="DAY13_IN" />
+                <ScalarProperty Name="DAY12_OUT" ColumnName="DAY12_OUT" />
+                <ScalarProperty Name="DAY12_IN" ColumnName="DAY12_IN" />
+                <ScalarProperty Name="DAY11_OUT" ColumnName="DAY11_OUT" />
+                <ScalarProperty Name="DAY11_IN" ColumnName="DAY11_IN" />
+                <ScalarProperty Name="DAY10_OUT" ColumnName="DAY10_OUT" />
+                <ScalarProperty Name="DAY10_IN" ColumnName="DAY10_IN" />
+                <ScalarProperty Name="DAY9_OUT" ColumnName="DAY9_OUT" />
+                <ScalarProperty Name="DAY9_IN" ColumnName="DAY9_IN" />
+                <ScalarProperty Name="DAY8_OUT" ColumnName="DAY8_OUT" />
+                <ScalarProperty Name="DAY8_IN" ColumnName="DAY8_IN" />
+                <ScalarProperty Name="DAY7_OUT" ColumnName="DAY7_OUT" />
+                <ScalarProperty Name="DAY7_IN" ColumnName="DAY7_IN" />
+                <ScalarProperty Name="DAY6_OUT" ColumnName="DAY6_OUT" />
+                <ScalarProperty Name="DAY6_IN" ColumnName="DAY6_IN" />
+                <ScalarProperty Name="DAY5_OUT" ColumnName="DAY5_OUT" />
+                <ScalarProperty Name="DAY5_IN" ColumnName="DAY5_IN" />
+                <ScalarProperty Name="DAY4_OUT" ColumnName="DAY4_OUT" />
+                <ScalarProperty Name="DAY4_IN" ColumnName="DAY4_IN" />
+                <ScalarProperty Name="DAY3_OUT" ColumnName="DAY3_OUT" />
+                <ScalarProperty Name="DAY3_IN" ColumnName="DAY3_IN" />
+                <ScalarProperty Name="DAY2_OUT" ColumnName="DAY2_OUT" />
+                <ScalarProperty Name="DAY2_IN" ColumnName="DAY2_IN" />
+                <ScalarProperty Name="DAY1_OUT" ColumnName="DAY1_OUT" />
+                <ScalarProperty Name="DAY1_IN" ColumnName="DAY1_IN" />
+                <ScalarProperty Name="DESC" ColumnName="DESC" />
+                <ScalarProperty Name="CODE" ColumnName="CODE" />
+                <ScalarProperty Name="SHIFT_HR" ColumnName="SHIFT_HR" />
+                <ScalarProperty Name="SHIFT_TYPE" ColumnName="SHIFT_TYPE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

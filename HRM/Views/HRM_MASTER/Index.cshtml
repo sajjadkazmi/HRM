@@ -1,0 +1,45 @@
+﻿@model IEnumerable<HRM.Models.HRM_MASTER>
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 style="text-align:center;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">HRM MASTER</h3>
+<div class="form-body">
+    <p>
+        <a href="@Url.Action("AddOrEdit","HRM_MASTER")" class="btn btn-default"><i class="fa fa-plus"></i> Create New</a>
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.USER_CODE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NAME)
+            </th>
+
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.USER_CODE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NAME)
+                </td>
+             
+                <td>
+                    <a href="@Url.Action("AddOrEdit","HRM_MASTER", new {id = item.USER_CODE})" class="btn btn-default"> <i class="fa fa-pencil"></i>  View</a>
+
+                    <a href="@Url.Action("Delete","HRM_MASTER", new {id = item.USER_CODE})" class="btn btn-default"> <i class="fa fa-trash"></i> delete</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>
