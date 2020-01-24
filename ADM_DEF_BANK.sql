@@ -1,0 +1,38 @@
+USE HRM
+GO
+
+/****** Object:  Table [dbo].[ADM_DEF_BANK]    Script Date: 02/01/2020 21:18:46 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+CREATE TABLE [dbo].[ADM_DEF_BANK](
+	[CODE] [numeric](10, 0) NOT NULL,
+	[DESC] [varchar](max) NULL DEFAULT (''),
+	[ADDRESS] [varchar](max) NULL DEFAULT (''),
+	[UAN] [varchar](20) NULL DEFAULT (''),
+	[EMAIL] [varchar](50) NULL DEFAULT (''),
+	[AC_NO] [varchar](max) NULL DEFAULT (''),
+	[AC_TITLE] [varchar](max) NULL DEFAULT (''),
+	[AUTH_STATUS] [varchar](1) NULL DEFAULT ('P'),
+	[AUTH_DATE] [datetime] NULL,
+	[AUTH_BY] [numeric](18, 0) NULL DEFAULT ((0)),
+	[AUTH_REMARKS] [varchar](max) NULL DEFAULT (''),
+	[INACTIVE] [numeric](1, 0) NULL DEFAULT ((0)),
+ CONSTRAINT [PK_ADM_DEF_BANK] PRIMARY KEY CLUSTERED 
+(
+	[CODE] DESC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
